@@ -36,4 +36,32 @@ func main() {
 	} else {
 		fmt.Println("abc is not exists")
 	}
+
+	fmt.Println()
+
+	demo := map[string]string{
+		"Earth": "ABC",
+		"Mars":  "DEF",
+	}
+
+	fmt.Println(demo)
+
+	demo1 := demo
+
+	demo["Key"] = "123"
+
+	fmt.Println(demo)
+	fmt.Println(demo1)
+
+	fmt.Println()
+	demo["Key"] = "456"
+
+	fmt.Println(demo)
+	fmt.Println(demo1)
+
+	fmt.Println()
+	delete(demo, "Key")
+
+	fmt.Println(demo)
+	fmt.Println(demo1)
 }

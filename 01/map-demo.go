@@ -29,4 +29,11 @@ func main() {
 	for key, value := range temp {
 		fmt.Println(key, value)
 	}
+
+	if abc, ok := temp["abc"]; ok {
+		fmt.Println(abc)
+		fmt.Println("abc is exists")
+	} else {
+		fmt.Println("abc is not exists")
+	}
 }

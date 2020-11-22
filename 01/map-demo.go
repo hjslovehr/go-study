@@ -63,5 +63,6 @@ func main() {
 	delete(demo, "Key")
 
 	fmt.Println(demo)
+
 	fmt.Println(demo1)
 }

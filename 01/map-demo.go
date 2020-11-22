@@ -17,7 +17,7 @@ func main() {
 	fmt.Println(temp["Earth"])
 	fmt.Println(temp["Mars"])
 
-	temp["Venus"] = -145
+	temp["Venus"] = 464
 
 	fmt.Println("------------------------------------------------------------")
 

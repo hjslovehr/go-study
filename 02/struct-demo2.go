@@ -9,6 +9,7 @@ import (
 // Person struct
 // 如果返回的结构字段名需要转换成其他格式，
 // 可以用 `json:"your property name"` 来说明
+// 如果是 xml，那么就是 `xml:"your property name"`
 type Person struct {
 	Name string `json:"name"`
 	Age  int    `json:"age"`

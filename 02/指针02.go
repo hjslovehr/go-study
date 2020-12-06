@@ -31,10 +31,27 @@ func test1() {
 	fmt.Println(*p)
 }
 
-func test2() {
+func (p *Person) birthday() {
+	p.age++
+}
 
+func test2() {
+	terry := &Person{
+		name: "Terry",
+		age:  15,
+	}
+
+	terry.birthday()
+	fmt.Printf("%+v\n", terry)
+}
+
+func reset(board *[8][8]rune) {
+	board[0][0] = 'r'
 }
 
 func test3() {
+	var board [8][8]rune
+	reset(&board)
 
+	fmt.Printf("%c", board[0][0])
 }

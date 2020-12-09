@@ -6,7 +6,7 @@ import (
 )
 
 func test() error {
-	return errors.New("This is a test error.")
+	return errors.New("this is a test error")
 }
 
 func main() {

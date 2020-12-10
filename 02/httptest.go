@@ -6,6 +6,11 @@ import (
 	"net/http"
 )
 
+func main() {
+	fmt.Println("---------- http demo ----------")
+	test()
+}
+
 func test() {
 	resp, err := http.Get("http://www.baidu.com/")
 	if err != nil {
@@ -22,9 +27,4 @@ func test() {
 	}
 
 	fmt.Println(string(bodyContent))
-}
-
-func main() {
-	fmt.Println("---------- http demo ----------")
-	test()
 }

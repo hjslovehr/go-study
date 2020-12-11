@@ -60,5 +60,4 @@ func process(con net.Conn) {
 func main() {
 	fmt.Println("---------- socket tcp server demo ----------")
 	start()
-
 }
